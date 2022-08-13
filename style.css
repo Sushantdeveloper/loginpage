@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+section.main{
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+    
+#container{
+    width: 65%;
+    height: 12cm;
+
+    background-color:#e1dcdc; 
+  
+}
+/* login  section style */
+.formsection{
+  /* margin-top: 20px ; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+
+  
+}
+.f-section,.r-section,.l-section{
+  text-decoration: none;
+}
+.loginimg{
+  width: 50%;
+  /* padding: 1.6rem 1rem; */
+  background-color: rgb(83 83 90);
+  height: 28.3rem;
+  animation: slide-down 0.5s ease;
+  }
+
+  @keyframes slide-down{
+    0% {transform: translateY(-100%);};
+    100%{transform: translateY(0%);};
+  }
+.loginimg img{
+width: 100%;
+height: 100%;
+} 
+
+
+.idp{
+ 
+  text-align: center;
+  margin: 10px;
+  padding: 10px; 
+  animation: slide-up 0.5s ease;
+
+ }
+ .idp input{
+ width: 18rem;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ 
+ }
+ #l-id input{
+  transform:translateX(4rem);
+ }
+ #r-id input{
+  transform:translateX(2rem);
+ }
+ @keyframes slide-up{
+  0% {transform: translateY(100%);};
+  100%{transform: translateY(0%);};
+}
+.register{
+  display: none;
+}
+.forgotpass{
+  display: none;
+}
+.forgotpassword{
+  padding: 10px;
+  margin: 10px;
+}
+@media screen and(max-width:500px){
+  .loginimg{
+    display: none;
+
+  }
+  .idp{
+    width: 100%;
+  }
+  
+}
+.idp button{
+  width: 22rem;
+  padding: 8px 1rem;
+  border-radius: 10px;
+  border-color: rgb(71, 13, 13);
+  border: solid 4px white;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color:hsl(41, 97%, 46%);
+}
+.idp button:hover{
+  background-color:  rgb(83 83 90);
+   color: white;
+   border: white solid 4px;
+}
+.xmark img{
+  width: 50px;
+  height: 40px;
+  transform: translateY(-4rem);
+}
+.xmark img:hover{
+  cursor: pointer;
+  border: 4px solid red;
+  border-radius: 10px;
+  /* background-color:  rgb(83 83 90); */
+}
+[placeholder]:focus::-webkit-input-placeholder{
+    transition: text-indent .4s .4s ease;
+    text-indent: -200%;
+    opacity: 1;
+}
+.idp input{
+  border: 2px solid black;
+}
+.idp.success input{
+  border: 2px solid rgb(3, 228, 71);
+}
+.idp.error input{
+  border: 2px solid red;
+}
+/* form input.success */
